@@ -36,14 +36,20 @@ User → Frontend → Backend → Retrieval System → AI Model → Response
 - LLM: Gemini API  
 
 ## 🔄 Workflow
-1. Prepare Data  
-2. Chunk Data  
-3. Create Embeddings  
-4. Store in FAISS  
-5. User Query  
-6. Retrieval  
-7. AI Processing  
-8. Final Output 
+1. Legal Data Collection (CSV dataset)
+2. Data Cleaning & Row Structuring (combine_row → structured legal paragraphs)
+3. Context-Aware Chunking (row-wise legal sections)
+4. Embedding Generation (SentenceTransformer: all-MiniLM-L6-v2)
+5. FAISS Index Creation & Storage (vector + text mapping)
+6. API Initialization (FastAPI + load models once)
+7. User Query Input (POST request via API)
+8. Query Embedding (same embedding model)
+9. Similarity Search (FAISS Top-K = 3 relevant laws)
+10. Context Extraction (retrieve legal texts)
+11. Prompt Engineering (structured legal reasoning format)
+12. LLM Processing (Gemini generates legal advice)
+13. Response Formatting (structured output: section, condition, punishment, note)
+14. API Response Delivery (JSON output to client)
  
 
 ## 💡 Example
