@@ -3,13 +3,12 @@ import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
 from google import genai
-
+import os
 # ==============================
 # GEMINI SETUP (ONCE)
 # ==============================
-client = genai.Client(api_key="AIzaSyA2BQE0747ir8uOo9lXb1HZcD-L1CuGvZ0")
+client = genai.Client(api_key=os.getenv("AIzaSyA2BQE0747ir8uOo9lXb1HZcD-L1CuGvZ0"))
 
-# ==============================
 # LOAD DATA (ONCE)
 # ==============================
 df = pd.read_csv("C:\\Users\\soupt\\OneDrive\\Desktop\\project-v\\lawgic-ai-legal-consultant\\data\\Law Sheet - Sheet1.csv")  
