@@ -7,8 +7,17 @@ import os
 # ==============================
 # GEMINI SETUP (ONCE)
 # ==============================
-client = genai.Client(api_key=os.getenv("AIzaSyA2BQE0747ir8uOo9lXb1HZcD-L1CuGvZ0"))
 
+from dotenv import load_dotenv
+import os
+from google import genai
+
+load_dotenv()
+
+api_key = os.getenv("GEMINI_API_KEY")
+# print(api_key)  # debug
+
+client = genai.Client(api_key=api_key)
 # LOAD DATA (ONCE)
 # ==============================
 df = pd.read_csv("C:\\Users\\soupt\\OneDrive\\Desktop\\project-v\\lawgic-ai-legal-consultant\\data\\Law Sheet - Sheet1.csv")  
@@ -93,3 +102,7 @@ Practical Note:
     )
 
     return response.text
+
+# olama
+
+
