@@ -29,11 +29,11 @@ User → Frontend → Backend → Retrieval System → AI Model → Response
 
 ## 🧰 Tech Stack
 - Frontend: HTML, CSS, JavaScript  
-- Backend: Python (Flask / FastAPI)  
+- Backend: Python (FastAPI)  
 - Data Handling: Pandas  
 - Embeddings: Sentence Transformers  
 - Vector Database: FAISS  
-- LLM: Groq API  
+- LLM: Gemini API  
 
 ## 🔄 Workflow
 1. Prepare Data  
@@ -43,7 +43,8 @@ User → Frontend → Backend → Retrieval System → AI Model → Response
 5. User Query  
 6. Retrieval  
 7. AI Processing  
-8. Final Output  
+8. Final Output 
+ 
 
 ## 💡 Example
 User: "My landlord is not returning my security deposit."
