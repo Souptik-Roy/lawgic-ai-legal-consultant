@@ -15,7 +15,7 @@ from google import genai
 load_dotenv()
 
 api_key = os.getenv("GEMINI_API_KEY")
-# print(api_key)  # debug
+print(api_key)  # debug
 
 client = genai.Client(api_key=api_key)
 # LOAD DATA (ONCE)
