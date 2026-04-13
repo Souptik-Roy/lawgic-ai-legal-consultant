@@ -10,4 +10,4 @@ class Query(BaseModel):
 @app.post("/query")
 def handle_query(query:Query):
     answer=rag_pipeline(query.query)
-    return {"Responses from LawGic\n": answer}
+    return {"answer": answer}
