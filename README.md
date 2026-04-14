@@ -64,4 +64,4 @@ Output:
 User asks → System finds law → AI explains
 
 ## 🧠 Summary
-LAWGIC = Search legal data + Explain using AI
+LAWGIC = Search legal data + Explain using AI 
