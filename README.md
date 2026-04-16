@@ -1,6 +1,6 @@
 # ⚖️ LAWGIC — LegalAnalytics Workflow using General Intelligence Consultancy 
 
-## 📌 Project Overview
+## 📌 Project Overview 
 LAWGIC is an AI-powered legal consultancy system designed to help common people understand legal issues in simple language.
 
 Instead of reading complex law books, users can ask questions in natural language, and the system will:
