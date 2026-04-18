@@ -28,12 +28,13 @@ This project uses:
 User → Frontend → Backend → Retrieval System → AI Model → Response
 
 ## 🧰 Tech Stack
-- Frontend: HTML, CSS, JavaScript  
-- Backend: Python (FastAPI)  
 - Data Handling: Pandas  
 - Embeddings: Sentence Transformers  
 - Vector Database: FAISS  
-- LLM: Gemini API  
+- LLM: Gemini API
+- Backend: Python (FastAPI)  
+- Frontend: HTML, CSS, JavaScript  
+  
 
 ## 🔄 Workflow
 1. Legal Data Collection (CSV dataset)
