@@ -66,3 +66,5 @@ User asks → System finds law → AI explains
 
 ## 🧠 Summary
 LAWGIC = Search legal data + Explain using AI 
+
+
